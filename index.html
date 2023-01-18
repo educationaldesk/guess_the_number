@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess the number</title>
+</head>
+<body>
+    <!-- contains the heading of the game -->
+    <header class="headingSection">
+        <h1 class="heading">guess the number</h1>
+        <h4 class="guessRange">
+            from 1 to <span class="end">20</span>
+        </h4>
+    </header>
+
+    <!-- this will diaplay hint winner and looser   -->
+    <div class="displayDiv">
+        <span class="Maindisplay">?</span>
+    </div>
+
+    <!--game container-->
+    <div class="game_container">
+        <div class="game_inputs">
+            <input type="number" name="guess_input" id="guess_input" class="guess_input">
+            <button class="btn btn_check" for="guess_input">
+                check
+            </button>
+            <button class="btn btn_again">again</button>
+        </div>
+        <div class="game_display">
+            <div class="diaplay highestScore">
+                <span class="txt">highest Score:: </span>
+                <span class="hscr">0</span>
+            </div>
+            <div class="diaplay score">
+                <span class="txt">score::</span>
+                <span class="scr">0</span>
+            </div>
+            <div class="diaplay chance">
+                <span class="txt">chance::</span>
+                <span class="chnc">20</span>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>
