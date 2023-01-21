@@ -1,0 +1,127 @@
+/* font-family: 'Press Start 2P', cursive; */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    background-color: #000;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 3rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header{
+    height: 19vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding-right: 20vw;
+}
+
+.lvls{
+    display: inline-block;
+    background-image: radial-gradient(#fff 30%, #777);
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 100rem;
+    border: 1px solid #000;
+    box-shadow: 0 .1rem 0 0 #999, 0 .3rem 0 #888, 0 .5rem 0 #777, 0 .7rem 0 #666, 0 .9rem 0 #555, 0 1.1rem 0 #444;
+    cursor: pointer;
+    position: relative;
+}
+
+.lvls:hover {
+    background-image: radial-gradient(#fff 40%, #777);
+    transform: translateY(-2px);
+    box-shadow: 0 .3rem 0 0 #999, 0 .4rem 0 #888, 0 .5rem 0 #777, 0 .7rem 0 #666, 0 .9rem 0 #555, 0 1.3rem 0 #444;
+}
+
+.lvls:active {
+    background-image: radial-gradient(#fff 32%, #666);
+    transform: translateY(1px);
+    box-shadow: 0 .3rem 0 0 #999, 0 .4rem 0 #888, 0 .5rem 0 #777, 0 .7rem 0 #666, 0 .9rem 0 #555, 0 1.1rem 0 #444;
+}
+
+.lvls::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: -20%;
+    background-color: transparent;
+    height: 0;
+    width: 0;
+    border: 1rem solid transparent;
+    border-right: 2rem solid #fff;
+    border-left-width: 0;
+}
+
+
+.head{
+    text-align: center;
+    line-height: 1.7;
+}
+
+
+.screen {
+    background-image: linear-gradient(#000 45%, #fff 44%, #000 49%);
+    height: 20vh;
+    margin-bottom: 4rem;
+}
+
+.main_display{
+    display: inline-block;
+    width: 30vw;
+    height: 90%;
+    transform: translate(110%, 5%);
+    background-color: #fff;
+    color: #000;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 7vh;
+}
+
+.gamebody{
+    height: 38vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gamebody__div {
+    height: 98%;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.userInput {
+    width: 16vw;
+    height: 30%;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.foo{
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
