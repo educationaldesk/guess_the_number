@@ -1,8 +1,14 @@
+//ABSTRACT >>>> variables
+@import "./scss/abstract/variables";
+
+
+//BASE >>>> base, typography
 @import "./scss/base/base";
 @import "./scss/base/typography";
 
-@import "./scss/layout/head";
 
-/* font-family: 'Press Start 2P', cursive; */
+//LAYOUT >>> grid, head
+@import "./scss/layout/grid";
+@import "./scss/layout/head";
 
 

@@ -24,4 +24,10 @@ body {
   padding: 3rem;
 }
 
-/* font-family: 'Press Start 2P', cursive; *//*# sourceMappingURL=main.css.map */
+.header {
+  max-height: 12vh;
+  max-width: 156rem;
+  background-color: red;
+  min-height: 15vh;
+  max-height: 20vh;
+}/*# sourceMappingURL=main.css.map */
