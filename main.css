@@ -1,0 +1,27 @@
+/* font-family: 'Press Start 2P', cursive; */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* font-family: 'Press Start 2P', cursive; */
+body {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  background-color: #000;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 3rem;
+}
+
+/* font-family: 'Press Start 2P', cursive; *//*# sourceMappingURL=main.css.map */
