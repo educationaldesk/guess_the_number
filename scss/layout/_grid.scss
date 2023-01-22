@@ -1,0 +1,19 @@
+.row {
+    max-width: $grid-width;
+    background-color: $clr-light-grey;
+
+    @include clearfix;
+    
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+
+    [class^="col-"]{
+        background-color: red;
+        float: left;
+        
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+        }
+    }
+}

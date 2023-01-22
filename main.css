@@ -24,6 +24,26 @@ body {
   padding: 3rem;
 }
 
+.row {
+  max-width: 156rem;
+  background-color: #ddd;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row:not(:last-child) {
+  margin-bottom: 4rem;
+}
+.row [class^=col-] {
+  background-color: red;
+  float: left;
+}
+.row [class^=col-]:not(:last-child) {
+  margin-right: 6rem;
+}
+
 .header {
   max-height: 12vh;
   max-width: 156rem;
