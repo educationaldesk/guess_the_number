@@ -24,9 +24,192 @@ body {
   padding: 3rem;
 }
 
+.header {
+  text-align: center;
+}
+
+.heading--main {
+  margin-bottom: 2%;
+  text-align: left;
+  padding-left: 17%;
+}
+.heading--sub {
+  text-align: left;
+  padding-left: 33%;
+}
+
+.btn {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+}
+
+.btn__round {
+  font-size: 1.2rem;
+  padding: 0;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 100%;
+  border: 1px solid #000;
+  background-image: radial-gradient(#fff 35%, #777);
+  box-shadow: 0 2px 0 1px #777, 0 4px 0 rgb(109, 109, 109), 0 6px 0 rgb(98, 98, 98), 0 8px 0 rgb(90, 90, 90), 0 10px 0 rgb(83, 83, 83);
+  position: relative;
+  cursor: pointer;
+}
+.btn__round::before {
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: none;
+  border: 1rem solid transparent;
+  border-right: 2rem solid #fff;
+  border-left-width: 0;
+  position: absolute;
+  top: 40%;
+  right: -20%;
+  visibility: hidden;
+}
+.btn__round::after {
+  content: "click to select level";
+  width: 200%;
+  font-size: 0.8rem;
+  padding: 2rem 0;
+  background-color: #fff;
+  position: absolute;
+  top: 30%;
+  right: -220%;
+  visibility: hidden;
+}
+.btn__round:hover {
+  background-image: radial-gradient(#fff 45%, #777);
+  box-shadow: 0 2px 0 1px #777, 0 4px 0 rgb(109, 109, 109), 0 6px 0 rgb(98, 98, 98), 0 8px 0 rgb(90, 90, 90), 0 12px 0 rgb(83, 83, 83);
+  transform: translateY(-2px);
+}
+.btn__round:hover::after, .btn__round:hover::before {
+  visibility: visible;
+}
+.btn__round:active {
+  background-image: radial-gradient(#fff 30%, #777);
+  box-shadow: 0 2px 0 1px #777, 0 4px 0 rgb(109, 109, 109), 0 6px 0 rgb(98, 98, 98), 0 8px 0 rgb(90, 90, 90), 0 9px 0 rgb(83, 83, 83);
+  transform: translateY(1px);
+}
+
+.btn__rectangle {
+  background-color: #ddd;
+  border: 1px solid #000;
+  box-shadow: 1rem 1rem 0 0 #777;
+  cursor: pointer;
+  position: relative;
+}
+.btn__rectangle::after {
+  content: "";
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  border: 1rem solid transparent;
+  border-left: 1rem solid #777;
+  border-right-width: 0;
+  position: absolute;
+  top: 0;
+  right: -1rem;
+}
+.btn__rectangle::before {
+  content: "";
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  border: 1rem solid transparent;
+  border-top: 1rem solid #777;
+  border-bottom-width: 0;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+}
+.btn__rectangle:hover {
+  background-color: #eee;
+  transform: translate(-1px, -2px);
+  box-shadow: 1.1rem 1.2rem 0 0 #777;
+}
+.btn__rectangle:hover::after {
+  border: 1.13rem solid transparent;
+  border-left: 1.13rem solid #777;
+  border-right-width: 0;
+  top: -1px;
+  right: -1.2rem;
+}
+.btn__rectangle:hover::before {
+  border: 1.13rem solid transparent;
+  border-top: 1.13rem solid #777;
+  border-bottom-width: 0;
+  bottom: -1.15rem;
+  left: 0;
+}
+.btn__rectangle:active {
+  background-color: #ccc;
+  transform: translate(1px, 2px);
+  box-shadow: 0.9rem 0.8rem 0 0 #777;
+}
+.btn__rectangle:active::after {
+  border: 0.9rem solid transparent;
+  border-left: 0.9rem solid #777;
+  border-right-width: 0;
+  top: -1px;
+  right: -0.9rem;
+}
+.btn__rectangle:active::before {
+  border: 0.9rem solid transparent;
+  border-top: 0.9rem solid #777;
+  border-bottom-width: 0;
+  bottom: -8.2px;
+  left: 0;
+}
+
+.userInput {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+}
+
+.screen {
+  min-height: 10vh;
+  max-height: 15vh;
+  text-align: center;
+  margin-bottom: 6rem;
+  background-image: linear-gradient(#000 45%, #fff 46%, #000 49%);
+}
+.screen .display_div {
+  margin-left: 36%;
+  background-color: #fff;
+  min-height: 10vh;
+  max-height: 15vh;
+}
+.screen .main_display {
+  display: inline-block;
+  color: #000;
+  font-size: 2rem;
+  margin: 9% 0;
+}
+
+.foo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.gamebody__div {
+  height: 45vh;
+}
+.gamebody__div .gameComp {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 20%;
+  font-size: 2rem;
+  margin-bottom: 6%;
+}
+
 .row {
   max-width: 156rem;
-  background-color: #ddd;
 }
 .row::after {
   content: "";
@@ -37,7 +220,6 @@ body {
   margin-bottom: 4rem;
 }
 .row [class^=col-] {
-  background-color: red;
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
@@ -59,7 +241,7 @@ body {
 .header {
   max-height: 12vh;
   max-width: 156rem;
-  background-color: red;
   min-height: 15vh;
   max-height: 20vh;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=main.css.map */

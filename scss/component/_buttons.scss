@@ -72,3 +72,83 @@
         transform: translateY(1px);
     }
 }
+
+
+// button starts from here
+.btn__rectangle{
+    background-color: $clr-light-grey;
+    border: 1px solid $clr-dark;
+    box-shadow: 1rem 1rem 0 0 $clr-grey;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+        content: "";
+        height: 0;
+        width: 0;
+        background-color: transparent;
+        border: 1rem solid transparent;
+        border-left: 1rem solid $clr-grey;
+        border-right-width: 0;
+        position: absolute;
+        top: 0;
+        right: -1rem;
+    }
+
+    &::before {
+        content: "";
+        height: 0;
+        width: 0;
+        background-color: transparent;
+        border: 1rem solid transparent;
+        border-top: 1rem solid $clr-grey;
+        border-bottom-width: 0;
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+    }
+
+    &:hover {
+        background-color: #eee;
+        transform: translate(-1px, -2px);
+        box-shadow: 1.1rem 1.2rem 0 0 $clr-grey;
+
+        &::after {
+            border: 1.13rem solid transparent;
+            border-left: 1.13rem solid $clr-grey;
+            border-right-width: 0;
+            top: -1px;
+            right:-1.2rem;
+        }
+
+        &::before {
+            border: 1.13rem solid transparent;
+            border-top: 1.13rem solid $clr-grey;
+            border-bottom-width: 0;
+            bottom: -1.15rem;
+            left:0;
+        }
+    }
+
+    &:active {
+        background-color: #ccc;
+        transform: translate(1px, 2px);
+        box-shadow: .9rem .8rem 0 0 $clr-grey;
+
+        &::after {
+            border: 0.9rem solid transparent;
+            border-left: 0.9rem solid $clr-grey;
+            border-right-width: 0;
+            top: -1px;
+            right:-0.9rem;
+        }
+
+        &::before {
+            border: .9rem solid transparent;
+            border-top: .9rem solid $clr-grey;
+            border-bottom-width: 0;
+            bottom: -8.2px;
+            left:0;
+        }
+    }
+}

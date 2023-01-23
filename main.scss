@@ -8,8 +8,16 @@
 @import "./scss/base/typography";
 
 
+//COMPONENT >>>>>> buttons, input,  mainScreen
+@import "./scss/component/buttons";
+@import "./scss/component/input";
+@import "./scss/component/mainScreen";
+
+
 //LAYOUT >>> grid, head
+@import "./scss/layout/foot";
+@import "./scss/layout/game";
 @import "./scss/layout/grid";
 @import "./scss/layout/head";
 
-
+// font-family: 'Press Start 2P', cursive;

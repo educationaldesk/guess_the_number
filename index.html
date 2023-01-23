@@ -16,52 +16,63 @@
 <body>
     <!-- heading box starts here -->
     <header class="header">
-        <button class="lvls levelS">
-            select level
-        </button>
-        <!-- heading div -->
-        <div class="head">
-            <h1 class="heading--main">
-                guess the number
-            </h1>
-            <h4 class="heading--sub">
-                <!-- level based max value change-->
-                form 1 to <span class="maxValue">20</span>
-            </h4>
+        <div class="row">
+            <div class="col-1-of-5">
+                <button class="btn btn__round">
+                    select level
+                </button>
+            </div>
+            <div class="col-4-of-5">
+                <h1 class="heading--main">
+                    guess the number
+                </h1>
+                <h5 class="heading--sub">
+                    from 1 to <span class="maxVal">20</span>
+                </h5>
+            </div>
         </div>
     </header>
     <!-- header ends here -->
 
     <!-- hint and message display -->
-    <div class="screen">
-        <span class="main_display">?</span>
-    </div>
+    <section class="screen">
+        <div class="row">
+            <div class="col-1-of-3 display_div">
+                <span class="main_display">?</span>
+            </div>
+        </div>
+    </section>
     <!-- hint and message display ends  -->
 
     <!-- game main body -->
-    <div class="gamebody">
-        <!-- input and click div  -->
+    <section class="gamebody">
+        <div class="row">
+            <div class="col-1-of-2">
+                <!-- input and click div  -->
         <div class="gamebody__div inputandclick">
-            <input type="number" class="userInput">
-            <button class="btn check">check</button>
-            <button class="btn again">agian</button>
+            <input type="number" class="gameComp userInput">
+            <button class="btn btn__rectangle check gameComp">check</button>
+            <button class="btn btn__rectangle again gameComp">agian</button>
         </div>
         <!-- input and click div ends here  -->
-
-        <!-- score and chances div -->
+            </div>
+            <div class="col-1-of-2">
+                <!-- score and chances div -->
         <div class="gamebody__div scoreAndchaces">
-            <div class="highestScore">highest score:
+            <div class="highestScore gameComp">highest score:
                 <span id="highestScore">0</span>
             </div>
-            <div class="yourScore">your score:
+            <div class="yourScore gameComp">your score:
                 <span id="yourScore">0</span>
             </div>
-            <div class="chances">chances left:
+            <div class="chances gameComp">chances left:
                 <span id="chancesLeft">20</span>
             </div>
         </div>
         <!-- scores and chances ends here  -->
-    </div>
+            </div>
+        </div>        
+    </section>
     <!-- game main body ends here  -->
 
     <footer class="foo">
