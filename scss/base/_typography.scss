@@ -8,3 +8,20 @@ body{
     color: #fff;
     padding: 3rem;
 }
+
+.header{
+    text-align: center;
+}
+
+.heading {
+    &--main{
+        margin-bottom: 2%;
+        text-align: left;
+        padding-left: 17%;
+    }
+
+    &--sub{
+        text-align: left;
+        padding-left: 33%;
+    }
+}

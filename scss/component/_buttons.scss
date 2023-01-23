@@ -1,0 +1,74 @@
+.btn {
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+}
+
+.btn__round {
+    font-size: 1.2rem;
+    padding: 0;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 100%;
+    border: 1px solid $clr-dark;
+    background-image:radial-gradient($clr-light 35%, $clr-grey);
+    box-shadow: 
+            0 2px 0 1px #777,
+            0 4px 0 rgb(109, 109, 109),
+            0 6px 0 rgb(98, 98, 98),
+            0 8px 0 rgb(90, 90, 90),
+            0 10px 0 rgb(83, 83, 83);
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        background-color: none;
+        border: 1rem solid transparent;
+        border-right: 2rem solid $clr-light;
+        border-left-width: 0;
+        position: absolute;
+        top: 40%;
+        right: -20%;
+        visibility: hidden;
+    }
+
+    &::after {
+        content: "click to select level";
+        width: 200%;
+        font-size: .8rem;
+        padding: 2rem 0;
+        background-color: $clr-light;
+        position: absolute;
+        top: 30%;
+        right: -220%;
+        visibility: hidden;
+    }
+
+    &:hover {
+        background-image:radial-gradient($clr-light 45%, $clr-grey);
+        box-shadow: 
+            0 2px 0 1px #777,
+            0 4px 0 rgb(109, 109, 109),
+            0 6px 0 rgb(98, 98, 98),
+            0 8px 0 rgb(90, 90, 90),
+            0 12px 0 rgb(83, 83, 83);
+        transform: translateY(-2px);
+
+        &::after, &::before {
+            visibility: visible;
+        }
+    }
+
+    &:active {
+        background-image:radial-gradient($clr-light 30%, $clr-grey);
+        box-shadow: 
+            0 2px 0 1px #777,
+            0 4px 0 rgb(109, 109, 109),
+            0 6px 0 rgb(98, 98, 98),
+            0 8px 0 rgb(90, 90, 90),
+            0 9px 0 rgb(83, 83, 83);
+        transform: translateY(1px);
+    }
+}

@@ -1,8 +1,8 @@
 .header {
     max-height: 12vh;
     max-width:$grid-width;
-    background-color: red;
+    background-color: $clr-light; // delete this
     min-height: $height-15vh;
     max-height: $height-20vh;
-    
+    margin-bottom: $gutter-sm-horizontal;
 }
