@@ -10,11 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <!-- local style sheet -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./scss/main.css">
     <title>guess the number</title>
 </head>
 <body>
-    
+    <!-- contains heading -->
+    <header class="heading">
+        <h1 class="heading--main">
+            guess the number
+        </h1>
+        <h3 class="heading--secondary">
+            from 1 to <span class="maxVal">20</span>
+        </h3>
+    </header>
+
+    <!-- contains level selecting button -->
+    <div class="lvl--selector">
+        <button class="btn__round btn__round--white">
+            select lvl
+        </button>
+    </div>
+    <div class="main--display"></div>
+    <section class="grid">
+        <div class="row">
+            <div class="col-1-of-2">col-1-of-2</div>
+            <div class="col-1-of-2">col-1-of-2</div>
+        </div>
+         <div class="row">
+            <div class="col-1-of-3">col-1-of-3</div>
+            <div class="col-1-of-3">col-1-of-3</div>
+            <div class="col-1-of-3">col-1-of-3</div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">col-1-of-3</div>
+            <div class="col-2-of-3">col-2-of-3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-5">col-1-of-5</div>
+            <div class="col-1-of-5">col-1-of-5</div>
+            <div class="col-1-of-5">col-1-of-5</div>
+            <div class="col-1-of-5">col-1-of-5</div>
+            <div class="col-1-of-5">col-1-of-5</div>
+        </div>
+
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
